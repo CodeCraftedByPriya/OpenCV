@@ -10,16 +10,3 @@ while(True):
         break
         abc.release()
 cv2.destroyAllWindows()
-
-
-# Capture Videos using OpenCV
-if (abc.isOpen() == False):
-    print("Could not open the camera")
-
-# Set Resolution
-width = int(abc.get(3))
-height = int(abc.get(4))
-
-# video codded - encoding and decoding
-video_cod = cv2.VideoWriter_fourcc(*'XVID')
-video_output = cv2.VideoWriter
